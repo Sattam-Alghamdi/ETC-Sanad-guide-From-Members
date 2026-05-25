@@ -32,7 +32,7 @@
             line-height: 1.7;
         }
 
-        /* الهيدر مع خلفية الشعار والمكعب المفرغ الكبير */
+        /* الهيدر مع خلفية المكعب المفرغ الكبير */
         header {
             background: 
                 linear-gradient(135deg, rgba(13, 35, 58, 0.95) 0%, rgba(6, 19, 33, 0.98) 100%),
@@ -47,7 +47,7 @@
             border-bottom: 5px solid var(--accent-color);
         }
 
-        /* الأيقونة البيضاء الصغيرة لشعار ETC أعلى العنوان */
+        /* أيقونة شعار ETC أعلى العنوان */
         header .logo-badge {
             background-color: var(--white);
             color: var(--primary-color);
@@ -76,7 +76,7 @@
             font-weight: 300;
         }
 
-        /* روابط الوصول السريع التفاعلية */
+        /* روابط الوصول السريع التفاعلية المضيئة */
         .quick-links {
             display: flex;
             justify-content: center;
@@ -247,7 +247,7 @@
             top: -5px;
         }
 
-        /* أقسام روابط ملفات الـ PDF التعليمية للمهام */
+        /* قسم الرابط التعليمي */
         .pdf-action-zone {
             background-color: #f8fafc;
             padding: 20px;
