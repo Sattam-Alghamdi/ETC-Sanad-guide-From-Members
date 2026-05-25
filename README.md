@@ -32,51 +32,44 @@
             line-height: 1.7;
         }
 
-        /* الهيدر مع خلفية المكعب المفرغ الكبير */
+        /* الهيدر والبطل */
         header {
-            background: 
-                linear-gradient(135deg, rgba(13, 35, 58, 0.95) 0%, rgba(6, 19, 33, 0.98) 100%),
-                url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="rgba(205, 162, 80, 0.08)" stroke-width="1.5"><path d="M200 60 L320 130 L320 270 L200 340 L80 270 L80 130 Z"/><path d="M200 60 L200 200 L320 270 M200 200 L80 270 M200 200 L200 340"/><path d="M200 100 L280 145 L280 245 L200 290 L120 245 L120 145 Z" stroke="rgba(205, 162, 80, 0.04)"/></svg>');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 550px;
+            background: linear-gradient(135deg, var(--primary-color) 0%, #061321 100%);
             color: var(--white);
-            padding: 90px 20px 70px 20px;
+            padding: 80px 20px 60px 20px;
             text-align: center;
             position: relative;
             border-bottom: 5px solid var(--accent-color);
         }
 
-        /* أيقونة شعار ETC أعلى العنوان */
-        header .logo-badge {
-            background-color: var(--white);
-            color: var(--primary-color);
-            font-weight: 800;
-            font-size: 16px;
-            padding: 6px 14px;
-            border-radius: 8px;
+        header .club-tag {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent-color);
+            font-weight: 700;
+            margin-bottom: 10px;
             display: inline-block;
-            margin-bottom: 15px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            letter-spacing: 1px;
+            background: rgba(205, 162, 80, 0.1);
+            padding: 5px 15px;
+            border-radius: 50px;
         }
 
         header h1 {
             font-size: 42px;
             font-weight: 800;
             margin-bottom: 15px;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.4);
         }
 
         header p {
             font-size: 18px;
             color: #cbd5e1;
             max-width: 700px;
-            margin: 0 auto 35px auto;
+            margin: 0 auto 30px auto;
             font-weight: 300;
         }
 
-        /* روابط الوصول السريع التفاعلية المضيئة */
+        /* روابط الوصول السريع المعدلة */
         .quick-links {
             display: flex;
             justify-content: center;
@@ -87,7 +80,7 @@
         }
 
         .quick-link-btn {
-            background-color: rgba(255, 255, 255, 0.03);
+            background-color: rgba(255, 255, 255, 0.1);
             color: var(--white);
             text-decoration: none;
             padding: 12px 24px;
@@ -98,16 +91,13 @@
             align-items: center;
             gap: 10px;
             transition: all 0.3s ease;
-            border: 1px solid rgba(205, 162, 80, 0.2);
-            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
         }
 
         .quick-link-btn:hover {
             background-color: var(--accent-color);
             color: var(--primary-color);
             transform: translateY(-2px);
-            box-shadow: 0 0 15px rgba(205, 162, 80, 0.4);
-            border-color: var(--accent-color);
         }
 
         /* الحاوية الرئيسية */
@@ -345,7 +335,6 @@
         }
 
         @media (max-width: 768px) {
-            header { background-size: 380px; padding: 60px 15px 50px 15px; }
             header h1 { font-size: 32px; }
             .tasks-grid { grid-template-columns: 1fr; }
         }
@@ -354,7 +343,7 @@
 <body>
 
     <header>
-        <div class="logo-badge">ETC</div>
+        <span class="club-tag">Technical Emerging Club - ETC</span>
         <h1>دليل عضو لجنة "سند" للهاكثونات</h1>
         <p>المرجع التنظيمي والتشغيلي الموحد لإدارة ومتابعة شؤون فرق الهاكثونات التابعة للنادي - من الألف إلى الياء.</p>
         
@@ -371,7 +360,7 @@
             <a href="رابط_ملف_الدليل_الرئيسي" target="_blank" class="quick-link-btn">
                 <i class="fa-solid fa-file-pdf"></i> ملف الدليل
             </a>
-            <a href="mailto:etc.sanad.alfiraq@gmail.com" class="quick-link-btn" style="width: 100%; max-width: 360px; justify-content: center; margin-top: 5px;">
+            <a href="mailto:etc.sanad.alfiraq@gmail.com" class="quick-link-btn" style="width: 100%; max-width: 340px; justify-content: center; margin-top: 5px;">
                 <i class="fa-solid fa-envelope"></i> إيميل النادي: etc.sanad.alfiraq@gmail.com
             </a>
         </div>
